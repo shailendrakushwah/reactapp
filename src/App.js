@@ -12,7 +12,7 @@ class App extends Component {
 
     callAPI() {
         
-        fetch("http://localhost:3001/dbpost")
+        fetch("http://ec2-15-206-27-144.ap-south-1.compute.amazonaws.com:3001/dbpost")
             .then(res => res.text())
             .then(res => this.setState({ apiResponse: res }))
             .catch(err => err);
